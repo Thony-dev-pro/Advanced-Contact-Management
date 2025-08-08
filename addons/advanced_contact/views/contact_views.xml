@@ -1,0 +1,37 @@
+<odoo>
+    <record id="view_partner_form_custom" model="ir.ui.view">
+        <field name="name">res.partner.form.custom</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='contact_addresses']" position="inside">
+                <group string="Information supplémentaires">
+                    <field name="birthdate"/>
+                    <field name="profession"/>
+                    <field name="importance_level"/>
+                    <field name="profile_image" widget = "image" class="oe_avatar"/>
+                    <field name="twitter_link"/>
+                    <field name="linkedin_link"/> 
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_list_contact_custom" model="ir.ui.view">
+        <field name="name">res.partner.form.custom</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='contact_addresses']" position="inside">
+                    <group string="Information supplémentaires">
+                        <field name="birthdate"/>
+                        <field name="profession"/>
+                        <field name="importance_level"/>
+                        <field name="profile_image" widget = "image" class="oe_avatar"/>
+                        <field name="twitter_link"/>
+                        <field name="linkedin_link"/> 
+                    </group>
+                </xpath>
+        </field>
+    </record>
+</odoo>
