@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Héritage de la vue existante -->
+    <record id="view_payment_provider_form" model="ir.ui.view">
+        <field name="name">payment.provider.form.custom</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='code']" position="after">
+                <field name="state" invisible="context.get('show_all_providers')"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Enregistrement du nouveau provider -->
+    <record id="payment_provider_vanilla" model="payment.provider">
+        <field name="name">Vanilla Pay</field>
+        <field name="code">vanilla</field>
+        <field name="state">disabled</field>
+    </record>
+</odoo>
