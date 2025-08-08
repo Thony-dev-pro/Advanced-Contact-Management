@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Odoo
 
 [![Build Status](https://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://runbot.odoo.com/runbot)
@@ -35,3 +36,7 @@ Developers can start with [the developer tutorials](https://www.odoo.com/documen
 
 If you believe you have found a security issue, check our [Responsible Disclosure page](https://www.odoo.com/security-report)
 for details and get in touch with us via email.
+=======
+# Advanced-Contact-Management
+A module that extends the standard contact (res.partner) features in Odoo by adding custom fields and additional functionalities
+>>>>>>> 2e7bed51cc33b88dfd1b622ef0425092c9e62444
